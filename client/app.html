@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangalore Home Price prediction</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <form action="" class = "form">
+        <h2>Area (Square Feet)</h2>
+        <input type="text" class = "area floatLabel" id = sqft name = "sqft" value = "1000" >
+
+        <h2>BHK</h2>
+        <div class = "switch-field">
+            <input type="radio" id = "radio-bhk-1" name = "nhk" value = "1">
+            <label for="radio-bhk-1">1</label>
+            
+            <input type="radio" id = "radio-bhk-2" name = "nhk" value = "2">
+            <label for="radio-bhk-2">2</label>
+            
+            <input type="radio" id = "radio-bhk-3" name = "nhk" value = "3">
+            <label for="radio-bhk-3">3</label>
+            
+            <input type="radio" id = "radio-bhk-4" name = "nhk" value = "4">
+            <label for="radio-bhk-4">4</label>
+            
+            <input type="radio" id = "radio-bhk-5" name = "nhk" value = "5">
+            <label for="radio-bhk-5">5</label>
+        </div>
+    </form>
+
+    <form action="" class="form">
+        <h2>Bath</h2>
+        <div class = "swicth-field">
+            <input type="radio" id = "radio-bath-1" name = "nhk" value = "1">
+            <label for="radio-bath-1">1</label>
+            
+            <input type="radio" id = "radio-bath-2" name = "nhk" value = "2">
+            <label for="radio-bath-2">2</label>
+            
+            <input type="radio" id = "radio-bath-3" name = "nhk" value = "3">
+            <label for="radio-bath-3">3</label>
+            
+            <input type="radio" id = "radio-bath-4" name = "nhk" value = "4">
+            <label for="radio-bath-4">4</label>
+            
+            <input type="radio" id = "radio-bath-5" name = "nhk" value = "5">
+            <label for="radio-bath-5">5</label>
+        </div>
+        <div><h2>Location</h2></div>
+
+        <div>
+            <select name="" id="locs" class = "locations">
+                <option value="" disabled="disabled" selected = "selected" > Choose a location </option>
+                <option value="">Electronic City</option>
+                <option value="">Rajaji Nagar</option>
+            </select>
+        </div>
+
+        <button class = "submit" onclick="onClickedEstimatedPrice()" type = "Button" >
+            Estimate Price
+        </button>
+
+        <div id="EstimatedPrice" class= "result"><h2></h2></div>
+        
+
+    </form>
+</body>
+</html>
